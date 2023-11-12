@@ -1,0 +1,10 @@
+Test (2C): unreliable agreement ...
+panic: runtime error: index out of range [-1]
+
+goroutine 101 [running]:
+6.824/raft.(*Raft).appendEntriesWrapper(0xc0000ee8c0, 0x1, {0x2, 0x4, 0x1, 0x2, {0xc0001c20c0, 0x6, 0x8}, 0x0}, ...)
+	/Users/martinchen/Desktop/My_Courses/Attending/CS_6450_Distributed_Systems/Homework/Lab/Lab/cs6450-labs/src/raft/raft.go:697 +0x875
+created by 6.824/raft.(*Raft).Start
+	/Users/martinchen/Desktop/My_Courses/Attending/CS_6450_Distributed_Systems/Homework/Lab/Lab/cs6450-labs/src/raft/raft.go:819 +0x60c
+exit status 2
+FAIL	6.824/raft	0.538s

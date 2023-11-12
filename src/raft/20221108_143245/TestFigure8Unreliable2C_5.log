@@ -1,0 +1,10 @@
+Test (2C): Figure 8 (unreliable) ...
+panic: runtime error: index out of range [2] with length 2
+
+goroutine 78 [running]:
+6.824/raft.(*Raft).sendHeartbeat(0xc000002140)
+	/Users/martinchen/Desktop/My_Courses/Attending/CS_6450_Distributed_Systems/Homework/Lab/Lab/cs6450-labs/src/raft/raft.go:948 +0x535
+created by 6.824/raft.(*Raft).requestVoteWrapper
+	/Users/martinchen/Desktop/My_Courses/Attending/CS_6450_Distributed_Systems/Homework/Lab/Lab/cs6450-labs/src/raft/raft.go:380 +0x34a
+exit status 2
+FAIL	6.824/raft	0.659s
